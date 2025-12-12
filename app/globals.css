@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --terminal-bg: #0d1117;
+  --terminal-fg: #c9d1d9;
+  --kernel-glow: #00ff41;
+  --gpu-primary: #76b900;
+  --ai-primary: #8b5cf6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-terminal-bg text-terminal-fg font-sans antialiased;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 65, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(118, 185, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(139, 92, 246, 0.03) 0%, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Terminal/Engineering Theme Styles */
+.terminal-window {
+  @apply bg-terminal-bg border border-terminal-green/20 rounded-lg p-6;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 65, 0.1),
+    inset 0 0 20px rgba(0, 255, 65, 0.05);
+}
+
+.kernel-card {
+  @apply bg-kernel-dark border border-kernel-accent/30 rounded-lg p-6;
+  box-shadow: 
+    0 0 30px rgba(0, 255, 65, 0.2),
+    inset 0 0 20px rgba(0, 255, 65, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.kernel-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 65, 0.1),
+    transparent
+  );
+  animation: scan-line 3s linear infinite;
+}
+
+.gpu-card {
+  @apply bg-gpu-dark border border-gpu-primary/30 rounded-lg p-6;
+  box-shadow: 
+    0 0 30px rgba(118, 185, 0, 0.2),
+    inset 0 0 20px rgba(118, 185, 0, 0.05);
+}
+
+.ai-card {
+  @apply bg-gradient-to-br from-ai-primary/10 to-ai-secondary/10 border border-ai-primary/30 rounded-lg p-6;
+  box-shadow: 
+    0 0 30px rgba(139, 92, 246, 0.2),
+    inset 0 0 20px rgba(139, 92, 246, 0.05);
+}
+
+/* Glow Effects */
+.glow-green {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.glow-blue {
+  text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+
+.glow-purple {
+  text-shadow: 0 0 10px rgba(188, 140, 255, 0.5);
+}
+
+/* Code/Matrix Effect */
+.matrix-text {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--kernel-glow);
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.8);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-terminal-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-terminal-green/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-terminal-green/50;
+}
+
+/* Selection */
+::selection {
+  @apply bg-terminal-green/30 text-terminal-fg;
+}
+
+/* Animations */
+@keyframes scan-line {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Utility Classes */
+.text-gradient {
+  @apply bg-gradient-to-r from-terminal-green via-gpu-primary to-ai-primary bg-clip-text text-transparent;
+}
+
+.border-glow {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+

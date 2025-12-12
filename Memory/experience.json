@@ -1,0 +1,557 @@
+{
+    "currentPosition": {
+        "company": "Klenty Soft Inc",
+        "role": "Software Development Engineer Intern",
+        "duration": "March 2025 - August 2025",
+        "owner": "Vigneshwaran B SDE - Intern",
+        "createdDate": "June 14 2025",
+        "lastUpdatedDate": "July 11 2025",
+        "totalTasksCompleted": 29,
+        "achievements": [
+            "Wrote scripts using Bluebird and MongoDB streams to extract credit charge data from the database, grouped, and exported as CSV.",
+            "Developed and shipped 20+ front-end and full-stack features",
+            "Fixed 5+ production issues",
+            "Contributed to high-scale systems using microservice architecture",
+            "Implemented design patterns and adhered to SOLID principles",
+            "Built reusable components using React, Context API, and Redux",
+            "Enhanced core features and built Post Paid feature",
+            "Gained hands-on experience in system design, API integrations"
+        ],
+        "detailedTasks": [
+            {
+                "taskNumber": 1,
+                "assignedDate": "April 03 Thursday",
+                "title": "Parallel Dialer Metric",
+                "type": "Frontend",
+                "changesMade": [
+                    "Used context to take the callId to new report component",
+                    "Written kibana Log function in new Report component and passed the props"
+                ],
+                "developmentPeriod": "April 03 - April 09 (30 Hours)",
+                "liveDate": "April 09 Wednesday",
+                "learnings": ["Learnt about kibana and elastic search"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 2,
+                "assignedDate": "April 10 Thursday",
+                "title": "Settings page UX fix",
+                "type": "Frontend",
+                "changesMade": [
+                    "Showing info on cards",
+                    "Showing safety limit on cards",
+                    "Changed Admin settings font",
+                    "Cadence Page navigation tab (settings) UX fix"
+                ],
+                "developmentPeriod": "April 10 - April 11 (6 Hours)",
+                "liveDate": "April 17 Thursday",
+                "learnings": [
+                    "Learnt code splitting and front end design patterns",
+                    "Common components usage and custom library"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 3,
+                "assignedDate": "April 16 Wednesday",
+                "title": "LinkedIn Agent UX",
+                "type": "Frontend",
+                "changesMade": [
+                    "Instead of using <optionCard/> common component rewritten the whole component in the linkedIn Agent settings page"
+                ],
+                "developmentPeriod": "April 16 - April 16 (6 Hours)",
+                "liveDate": "April 22 Tuesday",
+                "learnings": [
+                    "Learnt about how Common component usage affects the UI",
+                    "Learnt about flaws of common component usage in all places"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 4,
+                "assignedDate": "April 21 Monday",
+                "title": "Landing Page UX",
+                "type": "Frontend",
+                "changesMade": [
+                    "Have not used the function that generates unique number for untitled deck",
+                    "Problem with backend function onSelecting the slides got saved to the DB but save to DB must happen when user clicks save, fixed that",
+                    "And some simple UI like conditional disabling, empty state, close buttons for modals"
+                ],
+                "developmentPeriod": "April 21 - April 24 (24 Hours)",
+                "liveDate": "April 28 Monday",
+                "learnings": [
+                    "Learnt about building server side components",
+                    "Learnt that react components can be built in recursive way as getting styles and content from backend"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 5,
+                "assignedDate": "April 25 Friday",
+                "title": "Settings page UX fix",
+                "type": "Frontend",
+                "changesMade": [
+                    "Free trial credits to show up in minutes and not as '$' credits",
+                    "Exotel numbers should have the option to be 'Set as primary'. Now the option is completely disabled",
+                    "Have changed the cost of Exotel numbers as $20 and not as $15",
+                    "Have changed the cost of Twilio US numbers as $1.15 and not as $1"
+                ],
+                "developmentPeriod": "April 25 - April 25 (6 Hours)",
+                "liveDate": "April 28 Monday",
+                "learnings": [
+                    "Learnt about credits allocation and reducing in Production grade applications",
+                    "Learnt about Call Providers"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 6,
+                "assignedDate": "April 29 Tuesday",
+                "title": "Settings page UX - Console application Sync",
+                "type": "Frontend",
+                "changesMade": [
+                    "When console flag (enableFreeTrialCalling) enabled it only reflected in the calls card in settings",
+                    "Reflection also needed in Admin card's Call settings",
+                    "Admin settings call section need to enable the CRM sync checkbox and keep the Manage individual call Recording as checked"
+                ],
+                "developmentPeriod": "April 29 - April 29 (6 Hours)",
+                "liveDate": "May 09 Friday",
+                "learnings": [
+                    "Learnt about Application management with internal tool",
+                    "Klenty-client managed by klenty-console as we can enable/disable flags to let users use certain features on request"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 7,
+                "assignedDate": "April 30 Wednesday",
+                "title": "Task Export Feature (non-bulk)",
+                "type": "FullStack",
+                "changesMade": [
+                    "Have written new strategy for task in sep-webapp",
+                    "Have written new Dynamic/Generic ExportBaseStrategy",
+                    "This is a Violation of ISP but we have a structure so this is clean",
+                    "Export Flow: routes.ts, validator.ts, controller.ts, tasks.lib.ts, exports.helper.ts",
+                    "tasks.helper.ts (strategy for exporting task details, queries, Business logics and stuffs will be here)",
+                    "exports.helper.ts (After executing the Strategy and getting a structured data an array of objects we convert it to a CSV in handleExport() generic function this converts array of objects into CSV and upload to S3 bucket then sends mail to user's email)"
+                ],
+                "developmentPeriod": "May 2 - May 20 (60 Hours)",
+                "liveDate": "May 20 Tuesday",
+                "learnings": [
+                    "Learnt design patterns",
+                    "Learnt backend principles",
+                    "Learnt about Application architecture and micro service architecture",
+                    "Learnt backend optimised queries and how to write optimised queries",
+                    "Learnt about strategies, dynamic usage of functions and Typescript",
+                    "Experienced Real engineered backend code"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 8,
+                "assignedDate": "May 23 Friday",
+                "title": "High Priority Task UI Fixes and changes",
+                "type": "Frontend",
+                "changesMade": [
+                    "Added Info button in Agent Goal (Agent Creation Page)",
+                    "Added new Loader in schedx",
+                    "Added Product Loader in SEP-UI"
+                ],
+                "developmentPeriod": "May 23 - May 26 (12 Hours)",
+                "liveDate": "May 29 Thursday",
+                "learnings": [
+                    "Learnt about conditional common components",
+                    "Never Push live before test"
+                ],
+                "hotFixes": ["Logical error misunderstanding of common component"]
+            },
+            {
+                "taskNumber": 9,
+                "assignedDate": "May 29 Thursday",
+                "title": "Completed Calls Page Filter",
+                "type": "Frontend",
+                "changesMade": [
+                    "<CallsCompletedFilter/> component have been commented un commented it",
+                    "Call Page Routing from schedule ended up routing to completed calls Tab, cause the initial is set to completed Tab so no route for dashboard == OVERDUE ... stuffs in scheduled Tab"
+                ],
+                "developmentPeriod": "May 29 - May 29 (2 Hours)",
+                "liveDate": "May 29 Thursday",
+                "learnings": ["Learnt about routing in a component among tabs"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 10,
+                "assignedDate": "May 29 Thursday",
+                "title": "CallIQ - Product UI Fix",
+                "type": "Frontend",
+                "changesMade": [
+                    "Have truncated the text only for Imprompt-meetings cause it is very long title"
+                ],
+                "developmentPeriod": "May 29 - May 29 (2 Hours)",
+                "liveDate": "June 11 Wednesday",
+                "learnings": [
+                    "Learnt about truncated Texts",
+                    "Learnt about Micro frontend architecture working",
+                    "Logins using user id and session id"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 11,
+                "assignedDate": "May 30 Friday",
+                "title": "Klenty Call Details UI",
+                "type": "FullStack",
+                "changesMade": [
+                    "Have made a service to service call to transcript-service to fetch transcript datas",
+                    "Handled them in the EJS UI",
+                    "UI is completely new"
+                ],
+                "developmentPeriod": "June 3 - June 6 (15 Hours)",
+                "liveDate": "June 12 Thursday",
+                "learnings": [
+                    "Learnt that we can use other repo's files and move to current build and utilise it",
+                    "Learnt about how micro service communicate among each other",
+                    "Learnt how to design systems, architecture",
+                    "Learnt about Nginx, Ngrok and Auth-service works and why it is necessary",
+                    "Learnt about server side docs",
+                    "Learnt how to write a EJS file"
+                ],
+                "hotFixes": ["Fall Back cases"]
+            },
+            {
+                "taskNumber": 12,
+                "assignedDate": "June 3 Tuesday",
+                "title": "Product Routing among micro-frontend",
+                "type": "Frontend",
+                "changesMade": [
+                    "Added cases for sep in schedx Product",
+                    "Added cases for schedx in sep Product"
+                ],
+                "developmentPeriod": "June 3 - June 3 (1 Hour)",
+                "liveDate": "June 4 Wednesday",
+                "learnings": ["Learnt how Product Routing and Build file detecting in local storage Process"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 13,
+                "assignedDate": "June 6 Friday",
+                "title": "klenty client settings page UI (call fields validation)",
+                "type": "Frontend",
+                "changesMade": [
+                    "Have added extra validation to existing validation state answerFields tracking it in a Array and assigning the error message to specific index",
+                    "Included logic in <TextInput/> component",
+                    "Have written a new useEffect() that updates the option count based on the selectedSettings's Objects response's value array's length and updated error state and other related states"
+                ],
+                "developmentPeriod": "June 6 - June 10 (18 Hours)",
+                "liveDate": "June 12 Thursday",
+                "learnings": ["Improved knowledge on writing common components"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 14,
+                "assignedDate": "June 10 Tuesday",
+                "title": "Migrating Prompt from server to portKey for tracking",
+                "type": "Backend",
+                "changesMade": [
+                    "Have used Portkey wrapper function's inner function getAiInsights() from klenty-core",
+                    "Passed necessary props required for getAiInsights() the token calculation and portkey results will happen inside this function"
+                ],
+                "developmentPeriod": "June 12 - June 18 (20 Hours)",
+                "liveDate": "June 19 Thursday",
+                "learnings": [
+                    "Learnt about call flow from UI → websocket → Deep Gram → transcript → Queues → Post live transcript generation",
+                    "Learnt how service to service communication works",
+                    "Learnt about web socket",
+                    "Learnt about Portkey"
+                ],
+                "hotFixes": [
+                    "Have Misunderstood the return type in a helper function",
+                    "Have not handled token storing in db cause helper function is doing that"
+                ]
+            },
+            {
+                "taskNumber": 15,
+                "assignedDate": "June 19 Thursday",
+                "title": "Adding new filter option in filter panel of Task Page",
+                "type": "Spike",
+                "changesMade": [
+                    "View strategy will happen in backend using dynamic query builder function",
+                    "For this we will need to send chips to backend and have switch cases to build the query",
+                    "After building it the query will run and get the data from database and responds to request with it",
+                    "This is strategy pattern",
+                    "Index are more important and passing values to it is very much important as Query will work like B-Tree so B-Tree needs an value for the key to search not the existence of the key"
+                ],
+                "developmentPeriod": "June 20 - June 25 (Spike - 15 Hours)",
+                "liveDate": "June 25 Friday",
+                "learnings": [
+                    "Learnt how to write a view strategy",
+                    "Learnt about mongo db indexes and how they assist and affect read write processes",
+                    "Learnt about strategy driven coding pattern",
+                    "Learnt about factory design pattern",
+                    "Learnt about builder design pattern"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 16,
+                "assignedDate": "June 23 Monday",
+                "title": "New Drop Down UI in Agent Auto To Do in Schedx",
+                "type": "Frontend",
+                "changesMade": [
+                    "Have used Common component <DropDown/> sent props options, onSelect functions, value that need to be highlighted as selected initially and after selection changes yGap = 4 to make the dropdown little bit higher and added styles for text",
+                    "Have used existing callTypeImmediately state to control 'Now' and 'Schedule Later' in DropDown text and the selected value text"
+                ],
+                "developmentPeriod": "June 23 - June 23 (3 Hours)",
+                "liveDate": "June 23 Monday",
+                "learnings": ["Improved Knowledge on working of common components"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 17,
+                "assignedDate": "June 24 Tuesday",
+                "title": "Changed Server URL → Auth Base URL for Post call shareable link",
+                "type": "FullStack",
+                "changesMade": [
+                    "Have retrieved Call URL from call object and sent it to klenty Call details EJS file and handled that",
+                    "And As Domain name must come in URL so i replaced the SERVER_URL to AUTH_BASE_URL both are same though"
+                ],
+                "developmentPeriod": "June 24 - June 24 (30 Min)",
+                "liveDate": "June 25 Wednesday",
+                "learnings": [
+                    "Learnt One backend can have multiple domains",
+                    "Learnt Basics of domain types such as AAA domain and C Domain etc"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 18,
+                "assignedDate": "June 25 Wednesday",
+                "title": "Meeting Summary Generation Error",
+                "type": "Backend + Portkey",
+                "changesMade": [
+                    "Have Created Tool in Portkey named: generate_meeting_summary",
+                    "Root Cause: Have not added tool in Portkey",
+                    "Fix: Need to add Portkey Prompt tool to have structured response all the time and have must hit possibility this is more efficient than plain prompt"
+                ],
+                "developmentPeriod": "June 25 - June 25 (3 Hours)",
+                "liveDate": "June 25 Wednesday",
+                "learnings": ["Learnt Backend to PortKey Flow"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 19,
+                "assignedDate": "June 26 Thursday",
+                "title": "Refresh button in Schedx",
+                "type": "Frontend",
+                "changesMade": [
+                    "Have Added the button as Props for <TableToolbar/> component",
+                    "Have called the Component mount dependency state updation function and passed them as onClick event to the Refresh button",
+                    "Have included Dashboard refresh with Table refresh",
+                    "Functions are getCompletedCalls() updates the allCalls state variable which is main data to calls Table and getDashBoardData() updates the dashboardData state variable which is the main data for the dashboard cards",
+                    "Have Synced Skeleton loader inside <AgentTable/> to refresh button"
+                ],
+                "developmentPeriod": "June 26 - June 26 (2 Hours)",
+                "liveDate": "June 26 Thursday",
+                "learnings": ["Exposure on how Refresh in UI work"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 20,
+                "assignedDate": "June 27 Friday",
+                "title": "Changed old Prompt Id to new Prompt Id",
+                "type": "Backend",
+                "changesMade": [
+                    "Have replaced old prompt Id with new Id",
+                    "Repo: Klenty-core, sep-webapp, transcript-service, ws"
+                ],
+                "developmentPeriod": "June 27 - June 27 (2 Hour 13 mins)",
+                "liveDate": "July 01 Tuesday",
+                "learnings": ["None"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 21,
+                "assignedDate": "June 27 Friday",
+                "title": "Making status column filter as default (Freezing it), SK branch add tool tip, Calls (24hrs) - only show count if the call is within today's date using dayjs",
+                "type": "Frontend",
+                "changesMade": [
+                    "Sent disabledActionTillIndex={2} this as props to <CallsColumnFieldDropDown/> common component used to customise the table",
+                    "Added tool tip to Date column and increased z-index for .agentTableFreeze >global(.tableWrapperForOverflow >.tableCell:first-child) to make the tool tip visible above all",
+                    "Have used getDateTimeString() function to get the String format Date to show in tool tip",
+                    "Sanjai Kumaran have written a function to display the Date in Plural and singular format (1 hr, 2hrs, 1 day, 2days)"
+                ],
+                "developmentPeriod": "June 27 - June 28 (6 Hours)",
+                "liveDate": "July 01 Tuesday",
+                "learnings": ["Learnt how to get current domain name from window location host"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 22,
+                "assignedDate": "June 28 Saturday",
+                "title": "Need the heyMD logo in Sign in page (new page), Need to fix table breaking when no fields selected",
+                "type": "FullStack",
+                "changesMade": [
+                    "In Klenty client old repo login EJS file i have conditionally rendered the logo and added the logo in new_assets/lib/img/logo.png",
+                    "The login.ejs and logo files from klenty-client-old repo will be bundled with webapp build and created as image then pushed to Docker container",
+                    "The image will be served from Docker build as a response to get requests",
+                    "app.use(express.static(path.join(__dirname, '../client'))) this serves the static files to client"
+                ],
+                "developmentPeriod": "June 28 - June 30 (3 Hours)",
+                "liveDate": "On Hold",
+                "learnings": [
+                    "Improved Learning on server side documents and coding EJS file",
+                    "Learnt Login flow in Auth service and webapp",
+                    "Learnt about passport library",
+                    "Learnt Docker configuration",
+                    "Learnt about Docker configuration multi-step build and optimisation tips to have light weight image so the container will be faster",
+                    "Learnt about express.static used to server client the static files"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 23,
+                "assignedDate": "July 02 Wednesday",
+                "title": "Schedx Usabilities status filter sync with Dashboard count",
+                "type": "FullStack",
+                "changesMade": [
+                    "In Klenty-client called the API todoDashBoardCount() which made the request to backend",
+                    "In backend have altered the Query to having overrideen the default fallback dashboard statuses to the selected ones that comes to backend as chips via payload"
+                ],
+                "developmentPeriod": "July 02 - July 03 (5 Hours)",
+                "liveDate": "July 08 Monday",
+                "learnings": ["Learnt about filter queries ideas"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 24,
+                "assignedDate": "July 03 Thursday",
+                "title": "EHR - Integration Certification Task Module",
+                "type": "FullStack",
+                "changesMade": [
+                    "In Klenty Client have written new component for Task modal that Shows task list Assigned to the Patient and the logged in User is the target user",
+                    "Another modal that lets user create task for their patients and assign it to others",
+                    "In Backend integrated the EHR APIs and added method to the class in klenty-core library isolated the business logic",
+                    "In main backend have written new end points that servers EHR data and functionalities"
+                ],
+                "developmentPeriod": "July 07 - July 08 (12 Hours)",
+                "liveDate": "",
+                "learnings": [
+                    "Improved knowledge on Classes and Constructors",
+                    "Learnt Integration process Certification → Integration",
+                    "Learnt about refresh tokens and API integration Script to do POCs",
+                    "Improved knowledge on UI Development (FrontEnd)"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 25,
+                "assignedDate": "July 10 Thursday",
+                "title": "Schedx - locking Save button for regular and observer users",
+                "type": "Frontend",
+                "changesMade": [
+                    "In Klenty client have made changes in call Agent component's <Button /> and sent props (lock Icon)",
+                    "And Wrapped it with Tool tip",
+                    "Only for Restricted for users who are regular and observer"
+                ],
+                "developmentPeriod": "July 10 - July 10 (3 Hours)",
+                "liveDate": "July 10 Thursday",
+                "learnings": ["Improved Knowledge in front end"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 26,
+                "assignedDate": "July 14 Monday",
+                "title": "Call Spike for Post Paid Feature",
+                "type": "Spike",
+                "changesMade": [
+                    "Before connecting call we check the remainingCredits and Free call credits at company level",
+                    "After call we update the credits consumption in call and user documents and free call / remaining credits is updated in the company document keeping free call credits as priority to reduce used credits",
+                    "Same happens for SMS but for SMS we only check remainingCredits after sent it is updated in task details document and consumed credits is reduced in company level"
+                ],
+                "developmentPeriod": "July 16 - July 21 (30 Hours)",
+                "liveDate": "July 21 Monday",
+                "learnings": [
+                    "Improved knowledge about credits handling",
+                    "Learnt how Billing works with charge bee",
+                    "Learnt about auto top up flow and cron job to schedule bill generation",
+                    "Learnt how to handle credit systems"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 27,
+                "assignedDate": "July 15 Tuesday",
+                "title": "Prod issue - Agent save did not happened",
+                "type": "Backend",
+                "changesMade": [
+                    "The Agent Id (elevenlab's) have been removed for that Agent",
+                    "For Other agent there is Id"
+                ],
+                "developmentPeriod": "July 15 - July 15 (2 Hours 30 Mins)",
+                "liveDate": "July 15 Tuesday",
+                "learnings": ["Learnt about agent creation flow"],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 28,
+                "assignedDate": "July 22 Tuesday",
+                "title": "Tool calling (elevenlabs tool) from web socket server as user speaks",
+                "type": "Spike",
+                "changesMade": [
+                    "On user login the WS connection is established and channels connected",
+                    "Web socket server is responsible for calling the tools in Elvenlabs",
+                    "From UI event is sent to Web socket server according to the Event the channel is listened. Each Event has it's own instances",
+                    "All response to the prospect's word is handled in the handleProviderResponse in every provider instance class",
+                    "This handleProviderResponse will handle the tool calling activities from WS server to Elvenlabs (Tools will be created here and called in WS server)"
+                ],
+                "developmentPeriod": "July 22 - July 22 (3 Hours)",
+                "liveDate": "July 22 Tuesday",
+                "learnings": [
+                    "Learnt about websocket server",
+                    "Learnt about namespace routing in web socket",
+                    "Learnt about websocket working and infrastructure in Product",
+                    "Learnt how Tool calling happens in WS flow, Learnt about connections (call Providers). Improved knowledge on singleton pattern"
+                ],
+                "hotFixes": []
+            },
+            {
+                "taskNumber": 29,
+                "assignedDate": "July 24 Thursday",
+                "title": "EHR Appointments end point change with backend data handling",
+                "type": "FullStack",
+                "changesMade": [
+                    "Have used the GetAllAvailableAppointments end point to get all the un booked slots within the time range user selected and also according to the resource",
+                    "We only need the slots (unbooked one) that has default duration 15 mins this filtering happens in the backend",
+                    "The Appointment booking in UI happens in step by step modal with dynamic data",
+                    "STEPS:",
+                    "Step 1- In this step we get the Available resource for a patient, those are shown in drop down. In step 1 user must choose the Time range and Resource to get appropriate available appointment slots which will be shown in next step",
+                    "Step 2- Here we show the Appointment slots available for the chosen time zone and Resource",
+                    "Data Handling in front end - From API response we get All the available appointment for the Date, Time and Resource the user chose. This will be narrowed down while booking an appointment. Grouping the response in an array of objects example below [09:00 - 09:15:{}, 09:15-09:30:{}]. The objects inside will have all the Appointment details that came in response but they all will be grouped with in the above time ranges. This way it is easy to narrow down the Appointment with Location and Appointment type in upcoming steps",
+                    "Step 3- As any of the one time slot from the grouped slots array we seen in Step 2 will be chosen, in this step that object's location and appointment type is shown in drop down. This way we can handle the Appointment booking without having an overlapping error / fault",
+                    "Step 4- Other details such as Referring doctor, Coverage type and etc.. are bought. This way dynamic data is rendered in the modal"
+                ],
+                "developmentPeriod": "July 24 - July 25 (12 Hours)",
+                "liveDate": "",
+                "learnings": [
+                    "Learnt about Dynamic step by step data building in UI",
+                    "Learnt how to handle Appointment bookings",
+                    "Learnt data handling in front end"
+                ],
+                "hotFixes": []
+            }
+        ]
+    },
+    "previousPosition": {
+        "company": "Karomi Technology Pvt Ltd",
+        "role": "Internship Trainee",
+        "duration": "September 2024 - November 2024",
+        "achievements": [
+            "Developed and enhanced the Translation JSON Converter Tool...",
+            "Automated translation handling for multiple languages...",
+            "Built functionalities for managing translations and languages...",
+            "Implemented JSON upload features...",
+            "Technologies Used: ElectronJS, ReactJS.",
+            "Integrations Used: Google Translate API."
+        ]
+    }
+}

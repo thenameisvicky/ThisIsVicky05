@@ -1,0 +1,168 @@
+{
+    "currentLevel": "Intermediate to Advanced (strong in arrays, strings, binary search, sliding window, hash map, subarray problems; consistently improving with 26 problems solved)",
+    "areasOfImprovement": [
+      "Expand to more problem types (graphs, trees, dynamic programming, advanced data structures)",
+      "Participate in coding contests for speed and breadth",
+      "Focus on edge cases and further optimization",
+      "Revisit and optimize previously solved problems",
+      "Increase pace and minimize reliance on AI tools"
+    ],
+    "lastSolvedStrategyDate": "2025-09-26",
+    "problems": [
+      {
+        "name": "Maximum Sum Subarray (Kadane's Algorithm)",
+        "file": "maxSumSubarray.ts",
+        "approach": "Dynamic Programming (Kadane's Algorithm)",
+        "description": "Finds the maximum sum of a contiguous subarray using Kadane's algorithm. Handles edge cases including empty arrays, single elements, all negative numbers, and large number scenarios (1000000, -1000000, 1000000). Time complexity O(n), space complexity O(1). Recently implemented with comprehensive edge case testing.",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Group Anagrams",
+        "file": "groupAnagrams.ts",
+        "approach": "Hash Map with Sorted String Key",
+        "description": "Groups strings that are anagrams of each other using a hash map with sorted string as key. Returns groups of anagrams. Efficient for string manipulation and grouping."
+      },
+      {
+        "name": "Three Sum",
+        "file": "threeSum.ts",
+        "approach": "Sorting and Two Pointers",
+        "description": "Sorts the array and uses two pointers to find all unique triplets that sum to zero. Skips duplicates for both the first element and the two pointers. Returns all valid triplets."
+      },
+      {
+        "name": "Single Number",
+        "file": "singleNumber.ts",
+        "approach": "Bitwise XOR",
+        "description": "Uses XOR to find the element that appears only once in an array where every other element appears twice. Efficient and optimal."
+      },
+      {
+        "name": "Next Permutation",
+        "file": "nextPermutation.ts",
+        "approach": "Two Pointers, In-place Array Manipulation",
+        "description": "Finds the next lexicographical permutation by identifying the first decreasing element from the end, swapping, and reversing the suffix. In-place and optimal."
+      },
+      {
+        "name": "Two Sum (Sorted)",
+        "file": "twoSum2.ts",
+        "approach": "Two Pointers",
+        "description": "Uses two pointers on a sorted array to find two numbers that sum to the target. Returns their indices or [-1, -1] if not found."
+      },
+      {
+        "name": "Two Sum (Unsorted)",
+        "file": "twoSum1.ts",
+        "approach": "Hash Map",
+        "description": "Uses a hash map to find two numbers that sum to the target in an unsorted array. Returns their indices or [-1, -1] if not found."
+      },
+      {
+        "name": "Move Zeroes",
+        "file": "moveZeros.ts",
+        "approach": "Two Pointers (Overwrite and Fill)",
+        "description": "Moves all zeroes to the end of the array while maintaining the order of non-zero elements. Overwrites non-zeros, then fills the rest with zeroes. In-place."
+      },
+      {
+        "name": "Minimum Size Subarray Sum",
+        "file": "minSizeSubarraySum.ts",
+        "approach": "Sliding Window",
+        "description": "Finds the minimal length of a contiguous subarray with sum at least the target using a sliding window. Returns 0 if no such subarray exists."
+      },
+      {
+        "name": "Longest Substring Without Repeating Characters",
+        "file": "longSubStringNoDup.ts",
+        "approach": "Sliding Window, Hash Map",
+        "description": "Finds the length of the longest substring without repeating characters using a sliding window and hash map. Efficient and optimal."
+      },
+      {
+        "name": "Find Insert Position",
+        "file": "findInsertPosition.ts",
+        "approach": "Binary Search",
+        "description": "Finds the index where a target should be inserted in a sorted array using binary search. Returns the index for insertion."
+      },
+      {
+        "name": "Binary Search",
+        "file": "binarySearch.ts",
+        "approach": "Binary Search",
+        "description": "Standard binary search to find the index of a target in a sorted array. Returns -1 if not found. Efficient and optimal."
+      },
+      {
+        "name": "Four Sum",
+        "file": "fourSum.ts",
+        "approach": "Sorting and Two Pointers (Nested)",
+        "description": "Sorts the array and uses two nested loops with two pointers to find all unique quadruplets that sum to the target. Skips duplicates for all elements. Returns all valid quadruplets. Efficient for moderate input sizes."
+      },
+      {
+        "name": "Three Sum Closest",
+        "file": "threeSumClosest.ts",
+        "approach": "Sorting and Two Pointers (Closest Sum)",
+        "description": "Sorts the array and uses two pointers to find the triplet whose sum is closest to the target. Efficient for finding the closest sum to a given value."
+      },
+      {
+        "name": "Container With Most Water",
+        "file": "containerWithMostWater.ts",
+        "approach": "Two Pointers (Max Area)",
+        "description": "Uses two pointers to find the maximum area that can be formed between two lines in the array, representing the most water that can be contained. Efficient and optimal."
+      },
+      {
+        "name": "Count Hills and Valleys",
+        "file": "hillsAndValleysCount.ts",
+        "approach": "Two Pointers, Skipping Duplicates, Local Extrema Detection",
+        "description": "Counts the number of hills and valleys in an array by skipping consecutive duplicates and checking for local maxima and minima. Handles edge cases where all elements are the same or there are plateaus. Efficient for single-pass detection.",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Search in Rotated Sorted Array",
+        "file": "rotatedArraySearch.ts",
+        "approach": "Binary Search with Rotation Handling",
+        "description": "Searches for a target in a rotated sorted array using binary search. Handles both sorted and unsorted halves by comparing nums[left] with nums[mid]. Correctly manages edge cases and avoids infinite loops. Returns target index or -1 if not found. Time complexity O(log n), space complexity O(1).",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Zero-Filled Subarrays (LeetCode 2348)",
+        "file": "zeroFilledSubArrlength.ts",
+        "approach": "Sliding Window with Streak Counting",
+        "description": "Counts the total number of zero-filled subarrays by maintaining a streak counter. For each consecutive zero, adds the current streak length to the total count. Efficiently handles edge cases and returns the total count of all possible zero-filled subarrays. Time complexity O(n), space complexity O(1).",
+        "recentlyAdded": true
+      }
+      ,
+      {
+        "name": "Best Time to Buy and Sell Stock (LeetCode 121)",
+        "file": "bestTimeStockActivities.ts",
+        "approach": "One-Pass Tracking Min Price and Max Profit",
+        "description": "Scans prices once, tracking the minimum price so far and the maximum profit achievable at each step. Time complexity O(n), space O(1).",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Find N Unique Integers Sum up to Zero (LeetCode 1304)",
+        "file": "sumZero.ts",
+        "approach": "Constructive Symmetric Pairs",
+        "description": "Builds an array of length n using ±i symmetric pairs and optionally 0 for odd n, ensuring the total sum is zero. Time complexity O(n), space O(n).",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Maximum Product Subarray (LeetCode 152)",
+        "file": "maxProductSubarry.ts",
+        "approach": "Dynamic Tracking of Max/Min Products with Swap on Negatives",
+        "description": "Maintains current max and min products to handle negatives; swaps on negative values and updates the global maximum. Time complexity O(n), space O(1).",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Longest Common Prefix (LeetCode 14)",
+        "file": "longestCommonPrefix.ts",
+        "approach": "Iteratively Shrink Candidate Prefix",
+        "description": "Sorts by length and iteratively shrinks the candidate prefix until all strings start with it. Time complexity O(S) where S is total characters.",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Count Elements With Maximum Frequency",
+        "file": "countMaximumFrequence.ts",
+        "approach": "Hash Map Frequency Count and Sum at Max",
+        "description": "Counts occurrences using a hash map, tracks the maximum frequency, and sums counts of elements at that frequency. Time complexity O(n), space O(n).",
+        "recentlyAdded": true
+      },
+      {
+        "name": "Consecutive Odds (Three in a Row)",
+        "file": "consecutiveOdds.ts",
+        "approach": "Single pass scan with modulus checks",
+        "description": "Checks if an array contains three consecutive odd numbers by scanning once and verifying triplets with modulo arithmetic. Time complexity O(n), space O(1).",
+        "recentlyAdded": true
+      }
+    ]
+  } 

@@ -1,0 +1,29 @@
+{
+    "watt": {
+        "name": "WATT (WhatsApp Automated Texting Tool)",
+        "description": "Desktop tool that automates WhatsApp messages using Puppeteer and ElectronJS.",
+        "features": [
+            "Simulated human typing with randomized delays...",
+            "Implemented JSON-based message templates...",
+            "Frontend optimization using useMemo, useCallback...",
+            "Drafted a microservice scaling plan with Docker, Kubernetes, NAS hosting..."
+        ]
+    },
+    "leetcodeRepo": {
+        "name": "Leetcode-Repo",
+        "description": "Collaborative TypeScript repo using Strategy Pattern.",
+        "features": [
+            "Scalable structure for strategies...",
+            "Solutions for common algorithmic problems...",
+            "Focus on code modularity and collaboration."
+        ]
+    },
+    "nextjsDashboard": {
+        "name": "NextJS Dashboard App",
+        "description": "Dashboard App exploring SEO, SSR, CSR with Pages Router."
+    },
+    "reduxSocialMedia": {
+        "name": "Redux Social Media App",
+        "description": "Redux toolkit-based app with mock services and custom hooks."
+    }
+}
