@@ -10,7 +10,7 @@ import type { PortfolioData, Personal, Skills, Education, Experience, Project, G
 export class PortfolioRepository {
   private readonly memoryPath: string;
 
-  constructor(memoryPath: string = path.join(process.cwd(), 'Memory')) {
+  constructor(memoryPath: string = path.join(process.cwd(), 'src', 'Memory')) {
     this.memoryPath = memoryPath;
   }
 

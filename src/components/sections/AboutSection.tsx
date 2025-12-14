@@ -22,7 +22,7 @@ export default function AboutSection({ personal, meta }: AboutSectionProps) {
           <div className="space-y-3">
             <div>
               <span className="text-terminal-green">echo</span>
-              <span className="text-terminal-fg/70"> "{personal.experience}"</span>
+              <span className="text-terminal-fg/70"> {`"${personal.experience}"`}</span>
             </div>
             {meta.summary && (
               <div className="mt-4">

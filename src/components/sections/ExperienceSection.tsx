@@ -66,10 +66,13 @@ export default function ExperienceSection({ experience }: ExperienceSectionProps
               ))}
             </ul>
           </div>
-          <div className="hidden md:block">
-            <div className="p-4 rounded-lg bg-terminal-bg/50 border border-terminal-green/20">
+          <div className="hidden md:block w-full">
+            <div className="p-4 rounded-lg bg-terminal-bg/50 border border-terminal-green/20 w-full">
               <p className="text-xs font-mono text-terminal-green/70 mb-3">Process Threads</p>
-              <ProcessThreads count={currentPosition.totalTasksCompleted || 4} />
+              <ProcessThreads 
+                tasks={currentPosition.detailedTasks} 
+                count={currentPosition.totalTasksCompleted || 4} 
+              />
             </div>
           </div>
         </motion.div>

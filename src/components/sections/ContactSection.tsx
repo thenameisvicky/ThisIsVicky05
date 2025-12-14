@@ -13,7 +13,7 @@ export default function ContactSection({ personal }: ContactSectionProps) {
     <SectionCard title="Contact" variant="terminal" id="contact">
       <div className="space-y-4">
         <p className="text-terminal-fg/80">
-          Let's connect and build something amazing together.
+          {`Let's connect and build something amazing together.`}
         </p>
         <div className="flex flex-col md:flex-row gap-4">
           {personal.email && (
