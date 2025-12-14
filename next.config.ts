@@ -9,8 +9,7 @@ const nextConfig: NextConfig = {
   ...(isProduction && {
     output: "export",
     distDir: "build",
-    basePath: "/ThisIsVicky",
-    assetPrefix: "/ThisIsVicky",
+    basePath: "/ThisIsVicky05",
   }),
 };
 
