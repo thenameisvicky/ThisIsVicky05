@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     output: "export",
     distDir: "build",
     basePath: "/ThisIsVicky",
+    assetPrefix: "/ThisIsVicky",
   }),
 };
 
