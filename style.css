@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #121214;
+  --card-bg: #1a1a1c;
+  --card-border: #2a2a2c;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --accent: #00ffcc; /* Back to cyan for the dark theme */
+  --accent-dim: rgba(0, 255, 204, 0.05);
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.5;
+  padding: 60px 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  border-bottom: 2px solid var(--card-border);
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--text-primary);
+}
+
+h1::before {
+  content: "> ";
+  color: var(--accent);
+}
+
+#role {
+  font-size: 16px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.contact-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+  font-size: 13px;
+}
+
+.contact-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.contact-links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Sections */
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: var(--card-border);
+}
+
+.card {
+  margin-bottom: 100px;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: var(--text-primary);
+  max-width: 900px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.contact-chips {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  font-size: 14px;
+  color: var(--text-secondary);
+  background: var(--card-bg);
+  padding: 5px 12px;
+  border: 1px solid var(--card-border);
+}
+
+.chip .icon {
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.skill-category h3 {
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 20px;
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+}
+
+.skill-category ul {
+  list-style: none;
+}
+
+.skill-category li {
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.skill-category li::before {
+  content: ":: ";
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Projects */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr; /* Increased image width ratio */
+  gap: 60px;
+  align-items: center;
+}
+
+/* Zig-Zag Layout */
+.project-item:nth-child(even) {
+  direction: rtl;
+}
+
+.project-item:nth-child(even) .project-content,
+.project-item:nth-child(even) .project-features {
+  direction: ltr;
+  text-align: left;
+}
+
+.project-item:nth-child(even) .project-images {
+  direction: ltr;
+}
+
+.project-content h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.project-content p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.project-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.project-features span {
+  font-size: 11px;
+  padding: 3px 10px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+/* Carousel / Images */
+.project-images {
+  position: relative;
+  width: 100%;
+  aspect-ratio: auto; /* Adapts to image resolution */
+  min-height: 300px; /* Ensures a minimum presence */
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background: #000;
+}
+
+.carousel-container {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-ui-shot {
+  min-width: 100%;
+  height: auto;
+  object-fit: contain; /* Shows full image without cropping */
+  cursor: pointer;
+  filter: grayscale(0.2);
+  transition: all 0.3s ease;
+}
+
+.project-ui-shot:hover {
+  filter: grayscale(0);
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.modal-content .project-images {
+  aspect-ratio: auto;
+  height: 80vh;
+  border: none;
+}
+
+.modal-content .project-ui-shot {
+  object-fit: contain; /* Full view in modal */
+  cursor: default;
+}
+
+.modal-content .project-ui-shot:hover {
+  transform: none;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-modal:hover {
+  color: var(--accent);
+}
+
+/* Carousel Controls */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  font-family: var(--font-mono);
+  font-size: 20px;
+  display: none;
+  transition: all 0.2s;
+}
+
+.carousel-btn:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+.carousel-btn.prev { left: 15px; }
+.carousel-btn.next { right: 15px; }
+
+/* Footer */
+.footer {
+  margin-top: 150px;
+  padding: 40px 0;
+  border-top: 2px solid var(--card-border);
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .project-item, .project-item:nth-child(even) {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 40px;
+  }
+  
+  body {
+    padding: 30px 20px;
+  }
+  
+  .modal-content {
+    width: 95%;
+  }
+  
+  .modal-content .project-images {
+    height: 60vh;
+  }
+}
